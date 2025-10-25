@@ -8,3 +8,4 @@ class GenreSerializer(serializers.ModelSerializer):
         model = Genre
         #fields = '__all__'
         fields = ['id','name']
+    
