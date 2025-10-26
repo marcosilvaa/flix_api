@@ -1,9 +1,9 @@
-from actors.models import Actors
+from actors.models import Actor
 from rest_framework import serializers
 
 
-class ActorsSerializer(serializers.ModelSerializer):
+class ActorSerializer(serializers.ModelSerializer):
     
     class Meta:
-        model = Actors
+        model = Actor
         fields = '__all__'

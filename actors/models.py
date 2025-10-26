@@ -5,7 +5,7 @@ NATIONALITY_CHOICES = (
     ('BR','Brasil'),
 )
 
-class Actors(models.Model):
+class Actor(models.Model):
     name = models.CharField(max_length=200)
     birthdate = models.DateField(blank=True, null=True)
     nationality = models.CharField(
