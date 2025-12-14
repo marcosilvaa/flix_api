@@ -13,8 +13,6 @@ djangorestframework==3.16.1
     #   flix-api
 djangorestframework-simplejwt==5.5.1
     # via flix-api
-flake8==7.3.0
-    # via flix-api
 mccabe==0.7.0
     # via flake8
 pycodestyle==2.14.0
