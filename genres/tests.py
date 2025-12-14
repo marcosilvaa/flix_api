@@ -26,7 +26,7 @@ class GenreListCreateAPITestCase(TestCase):
         """Test GET request to /genres/ returns a list of genres."""
         response = self.client.get(reverse('genre-create-list'))
         self.assertEqual(response.status_code, 200)
-        
+
         data = json.loads(response.content)
         self.assertEqual(len(data), 3)
         self.assertEqual(data[0]['name'], 'Action')
@@ -41,12 +41,12 @@ class GenreListCreateAPITestCase(TestCase):
             data=json.dumps(payload),
             content_type='application/json'
         )
-        
+
         self.assertEqual(response.status_code, 201)
         data = json.loads(response.content)
         self.assertEqual(data['name'], 'Horror')
         self.assertTrue('id' in data)
-        
+
         # Verify the genre was actually created in the database
         self.assertTrue(Genre.objects.filter(name='Horror').exists())
         self.assertEqual(Genre.objects.count(), 4)
@@ -63,7 +63,7 @@ class GenreDetailAPITestCase(TestCase):
         """Test GET request to /genres/<id>/ returns the correct genre."""
         response = self.client.get(reverse('genre-detail-view', args=[self.genre.id]))
         self.assertEqual(response.status_code, 200)
-        
+
         data = json.loads(response.content)
         self.assertEqual(data['id'], self.genre.id)
         self.assertEqual(data['name'], 'Thriller')
