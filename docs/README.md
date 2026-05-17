@@ -1,13 +1,16 @@
-# Documentação do Projeto Flix API
+# Documentação do Flix API
 
-Bem-vindo à documentação do projeto Flix API. Este guia contém todas as informações necessárias para entender os guidelines e padrões utilizados no desenvolvimento do projeto.
+Esta pasta contém a documentação técnica detalhada do projeto.
 
 ## Índice
 
-1. [Estrutura do Projeto](./project_structure.md) - Descrição da organização dos arquivos e pastas
-2. [Guia de Desenvolvimento](./development_guidelines.md) - Diretrizes e boas práticas para desenvolvimento
-3. [Padrões de API](./api_standards.md) - Normas para criação de endpoints e recursos da API
-4. [Sistema de Permissões](./permissions_system.md) - Explicação do sistema de permissões utilizado
-5. [Sistema de Autenticação](./authentication_system.md) - Detalhes sobre o sistema de autenticação JWT
-6. [Configuração e Deploy](./configuration_and_deployment.md) - Informações sobre configurações e implantação
-7. [Endpoints da API](./api_endpoints.md) - Lista completa dos endpoints disponíveis
+| Documento | Descrição |
+|-----------|-----------|
+| [Estrutura do Projeto](estrutura_do_projeto.md) | Organização de diretórios, responsabilidades de cada pasta e arquivo, e decisões estruturais |
+| [Modelos de Dados](modelos_de_dados.md) | Modelos Django, campos, relacionamentos, restrições e diagrama de entidades |
+| [Endpoints da API](endpoints_da_api.md) | Lista completa de endpoints, métodos HTTP, permissões, exemplos de request/response e padrões de serialização |
+| [Sistema de Permissões](sistema_de_permissoes.md) | Arquitetura de permissões, mapeamento HTTP → permissão Django, e a GlobalDefaultPermission |
+| [Sistema de Autenticação](sistema_de_autenticacao.md) | Configuração JWT, endpoints de token, fluxo de autenticação e estrutura do app authentication |
+| [Padrões e Convenções](padroes_e_convencoes.md) | Convenções de código, padrão de views/serializers/URLs, nomenclatura e validações customizadas |
+| [Guia de Desenvolvimento](guia_de_desenvolvimento.md) | Setup, comandos, configuração, como adicionar novos apps e fluxo de trabalho |
+| [Problemas Conhecidos](problemas_conhecidos.md) | Bugs, inconsistências, código morto e pontos de atenção no código |
